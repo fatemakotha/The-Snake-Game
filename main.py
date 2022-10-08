@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-
+import time
 #Setting up the screen:
 screen = Screen()
 screen.setup(width=600, height=600) #sets the screen dimension
@@ -18,12 +18,13 @@ for position in starting_positions:
     new_segment.goto(position)
     segments.append(new_segment)
 
-screen.update() #screen updated after 3 objects have been created
+
 
 game_is_on = True
 while game_is_on:
     for seg in segments:
         seg.forward(20)
+        screen.update()  # screen updated after 3 objects have been created
 
 
 
