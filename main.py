@@ -21,10 +21,11 @@ for position in starting_positions:
 
 game_is_on = True
 while game_is_on:
+    screen.update()  # screen updated after 3 objects have been created
+    time.sleep(0.1)  # adds 0.1 sec delay after all 3 segments have moved
     for seg in segments:
         seg.forward(20)
-        screen.update()  # screen updated after 3 objects have been created
-        time.sleep(1)  # adds 1 sec delay after each segment moves
+
 
 
 
