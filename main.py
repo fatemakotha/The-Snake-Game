@@ -7,6 +7,7 @@ screen.bgcolor("black")
 screen.title("Snake Game")
 
 x_positions = [0, -20, -40]
+all_turtles = []
 
 
 
