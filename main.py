@@ -24,6 +24,7 @@ while game_is_on:
     screen.update()  # screen updated after 3 objects have been created
     time.sleep(0.1)  # adds 0.1 sec delay after all 3 segments have moved
 
+    for seg_num in range(start=2 , stop=0 , step=-1): #starts seg_num with value 2 and ends at 0 with -1 as steps
 
 
 
