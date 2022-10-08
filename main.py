@@ -1,5 +1,5 @@
 from turtle import Turtle, Screen
-import time
+
 #Setting up the screen:
 screen = Screen()
 screen.setup(width=600, height=600) #sets the screen dimension
