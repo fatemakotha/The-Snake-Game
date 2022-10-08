@@ -26,4 +26,13 @@ while game_is_on:
         screen.update()  # screen updated after 3 objects have been created
         time.sleep(1)  # adds 1 sec delay after each segment moves
 
+
+
+
+
+
+
+
+
+
 screen.exitonclick()
