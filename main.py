@@ -25,10 +25,10 @@ while game_is_on:
     for seg in segments:
         seg.forward(20)
         time.sleep(0.1)  # sleep time is set to 1 second
-    screen.update()
+    screen.update() #whern tracer is off, we use update() to tell program to refresh and redraw the screen
 
 
-#whern tracer is off, we use update() to tell program to refresh and redraw the screen
+
 
 
 
