@@ -1,6 +1,7 @@
 from turtle import Turtle, Screen
 import time #imports the time module
 from snake import Snake
+from scoreboard import Scoreboard
 
 screen = Screen()
 screen.setup(width=600, height=600) #screen' width and height set to 600pixels
@@ -10,6 +11,7 @@ screen.tracer(0) #tracer takes a number as input and it turns the animation on/o
 
 
 snake = Snake()
+
 
 screen.listen() #starts listening
 
