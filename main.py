@@ -29,8 +29,5 @@ while game_is_on:
     snake.move()
 
 
-#cvtyryg
-#ry
-
 
 screen.exitonclick()
