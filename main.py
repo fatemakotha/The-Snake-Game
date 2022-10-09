@@ -12,10 +12,12 @@ screen.tracer(0) #tracer takes a number as input and it turns the animation on/o
 snake = Snake()
 
 screen.listen() #starts listening
-screen.onkey(key="Up", fun=move_upwards) #calls the move_forward function when w is hit **
-screen.onkey(key="Down", fun=move_downwards) #calls the move_backwards function when s is hit **
-screen.onkey(key="Left", fun=turn_left) #calls the counter_clockwise function when a is hit **
-screen.onkey(key="Right", fun=turn_right) #calls the clockwise function when d is hit **
+
+screen.onkey(key="Up", fun=snake.up) #calls the snake.up function when upward arrow is hit **
+screen.onkey(key="Down", fun=snake.down) #calls the snake.downfunction when downward arrow is hit **
+screen.onkey(key="Left", fun=snake.left) #calls the snake.left function when left arrow is hit **
+screen.onkey(key="Right", fun=snake.right) #calls the snake.right function when right arrow is hit **
+
 
 
 
