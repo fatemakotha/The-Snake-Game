@@ -30,7 +30,7 @@ while game_is_on:
 
 
 
-
+#ryrty
 
 
 screen.exitonclick()
