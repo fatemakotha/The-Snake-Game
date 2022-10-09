@@ -22,15 +22,17 @@ screen.update()
 
 game_is_on = True
 while game_is_on:
-    for seg in segments:
-        seg.forward(20)
-        time.sleep(0.1)  # sleep time is set to 1 second
     screen.update() #whern tracer is off, we use update() to tell program to refresh and redraw the screen
+    time.sleep(1)  # sleep time is set to 1 second
 
+    #HERE range is 2-0, which means this loop repeats for 2 values: 2, 2-1=1, and not 0. Because range is exclusive of last value
+    for seg_num in range(len(segments) - 1, 0, -1): #MOVES 3RD piece to 2DN pieces' location #AND #MOVES 2ND piece to 1ST pieces' location
+        new_x = segments[seg_num - 1].xcor()
+        new_y = segments[seg_num - 1].ycor()
+        segments[seg_num].goto(x=new_x, y=new_y) #the last piece moves to the second to last segment's position
 
-
-
-
+    segments[0].forward(20)
+    segments[0].left(90)
 
 
 
