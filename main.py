@@ -2,6 +2,7 @@ from turtle import Turtle, Screen
 import time #imports the time module
 from snake import Snake
 from food import Food
+from scoreboard import Scoreboard
 
 
 screen = Screen()
@@ -13,7 +14,7 @@ screen.tracer(0) #tracer takes a number as input and it turns the animation on/o
 
 snake = Snake()
 food = Food()
-
+scoreboard = Scoreboard()
 
 
 
