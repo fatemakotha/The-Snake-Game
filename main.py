@@ -24,12 +24,12 @@ screen.onkey(key="Right", fun=snake.right) #calls the snake.right function when 
 game_is_on = True
 while game_is_on:
     screen.update() #when tracer is off, we use update() to tell program to refresh and redraw the screen
-    time.sleep(1)  # sleep time is set to 1 second
+    time.sleep(0.1)  # sleep time is set to 1 second
 
     snake.move()
 
 
-#cvtyr
+#cvtyryg
 #ry
 
 
