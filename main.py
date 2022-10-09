@@ -29,7 +29,7 @@ while game_is_on:
     snake.move()
 
 
-#cv
+#cvtyr
 #ry
 
 
